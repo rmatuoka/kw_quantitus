@@ -1,0 +1,30 @@
+-content_for :stylesheets do
+  =stylesheet_link_tag "internal.css"
+  =stylesheet_link_tag "news.css"
+
+-content_for :highlight do
+  .row.highlight
+    .col-md-12.image
+      =image_tag("destaques/news.jpg")
+
+  .row.highlight-item
+    .col-md-8.col-md-offset-2
+      %h1 Acompanhe nossas realizações e novidades
+
+%section.main-content
+  .container.breadcrumb-custom
+    .row
+      .col-md-12
+        = link_to "quantittus / ", "#"
+        = link_to "notícias", "#", :class => "active"
+    
+    .row
+      .col-md-12
+        %h1 Notícias
+        
+    .row.news
+      -@news.each do |n|
+        .col-md-4
+          %h2=n.title
+          =image_tag(n.image.url(:medium))
+          =link_to "#{n.summary}", news_path(n)

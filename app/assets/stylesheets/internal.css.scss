@@ -1,0 +1,22 @@
+header{
+  height:362px;
+
+  .highlight{
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index:-1000;
+    height:362px;
+    width:100%;
+
+    .image
+    {
+      margin-left:15px;
+      width: 100%;
+    	height: 100%;
+    	overflow:hidden;
+    	clip:rect(0px 100% 362px 0px);
+    	/*position: relative;*/
+  	}
+  } 
+}

@@ -1,0 +1,59 @@
+// Place all the styles related to the servicos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.servicos
+{
+  h2
+  {
+    font-size:21px;
+    color:#0099ce;
+    font-weight:300;
+  }
+  span
+  {
+    font-size:14px;
+    color:#0099ce;
+    font-weight:300;
+    margin-top:-5px;
+  }
+  
+  p
+  {
+    font-size:14px;
+    color:#8b8b8b;
+  }
+  
+  .menu
+  {
+    background-color:#0099ce;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    
+    
+    a
+    {
+      padding-left:10px;
+      display:block;
+      width:100%;
+      height:50px;
+      line-height:50px;
+      font-size:14px;
+      font-weight:300;
+      color:#fff;
+    }
+    
+    a:hover
+    {
+      text-decoration:none;
+      background-color:#00bdff;
+    }
+    
+    a.active
+    {
+      background-color:#00bdff;
+    }
+  }
+    
+}

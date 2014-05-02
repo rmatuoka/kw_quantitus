@@ -1,0 +1,21 @@
+- title "Admin/Sitecontact"
+
+%p
+  %strong Name:
+  = @sitecontact.name
+%p
+  %strong Email:
+  = @sitecontact.email
+%p
+  %strong Phone:
+  = @sitecontact.phone
+%p
+  %strong Message:
+  = @sitecontact.message
+
+%p
+  = link_to "Edit", edit_admin_sitecontact_path(@sitecontact)
+  |
+  = link_to "Destroy", [:admin, @sitecontact], :confirm => 'Are you sure?', :method => :delete
+  |
+  = link_to "View All", admin_sitecontacts_path

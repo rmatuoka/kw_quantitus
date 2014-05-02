@@ -1,0 +1,57 @@
+-content_for :stylesheets do
+  =stylesheet_link_tag "internal.css"
+  =stylesheet_link_tag "produtos.css"
+
+-content_for :highlight do
+  .row.highlight
+    .col-md-12.image
+      =image_tag("destaques/produtos.jpg")
+
+  .row.highlight-item
+    .col-md-8.col-md-offset-2
+      %h1 Resultados para o dia a dia da sua empresa
+
+%section.main-content
+  .container.breadcrumb-custom
+    .row
+      .col-md-12
+        = link_to "quantittus / ", root_path
+        = link_to "produtos", "#", :class => "active"
+
+    .row
+      .col-md-12
+        %h1 Produtos
+
+    .row.produtos
+      .col-md-12
+        %h2 
+          =image_tag("produtos/ico-aloca.jpg")
+          ALOCA
+        %span   Tenha os recursos da sua empresa alocados de forma otimizada, gerencie seus resultados e melhore sua performance
+
+        %p 
+          Análises de produtividade, controle de estoque e outros registros não são suficientes para que se possa gerenciar os recursos disponíveis em uma empresa. É preciso transformar dados em informações de valor, para que seja possível planejar e gerenciar recursos de forma eficaz e eficiente. 
+          <br /><br />
+          Por este motivo, desenvolvemos o Aloca, um software voltado para a gestão do planejamento agregado da produção, seja em processos de produção industrial ou de prestação de serviços. O Aloca permite o conhecimento e controle sobre os recursos da empresa, assegurando que eles estejam disponíveis quando necessários, considerando as premissas de garantia do custo mínimo, produtividade máxima, lucro máximo ou mesmo uma combinação desses objetivos.
+          <br /><br />
+          Um software de gestão completo, adequado às necessidades da sua empresa e de seus negócios.
+          <br /><br />
+          Entre em contato e saiba mais sobre o Aloca.
+          
+
+
+        %h2 
+          =image_tag("produtos/ico-softwares.jpg")
+          Softwares Customizados
+        %span Softwares corporativos e administrativos feitos sob medida
+
+        %p 
+          Nem sempre as soluções necessárias em registro, organização, classificação e acesso a informações para gestão estão disponíveis em softwares amplamente adotados pelo mercado. Em muitos casos, são necessárias ferramentas dedicadas e exclusivas para que processos e ações sejam bem sucedidos, respeitando o modelo de negócios e práticas únicas da sua empresa. 
+          <br /><br />
+          A expertise de nossa equipe em modelos e métodos de gestão também se aplica no desenvolvimento de softwares completos, feitos sob medida para as necessidades do seu negócio, sejam elas de um único departamento ou de toda a cadeia de processos da sua empresa.
+          <br /><br />
+          Entre em contato e agende uma reunião para conhecer mais sobre nossas soluções em Softwares customizados.
+          
+
+
+

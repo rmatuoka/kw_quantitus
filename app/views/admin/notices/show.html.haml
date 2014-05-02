@@ -1,0 +1,38 @@
+%section.content-header
+  %h1
+    Notícias  
+    %small Control panel
+  %ol.breadcrumb
+    %li
+      %a{:href => "admin_root_path"}
+        %i.fa.fa-dashboard
+        Home
+    %li.active Notícias
+     
+
+/ Main content
+%section.content
+  .row
+    / left column
+    .col-md-12
+      / general form elements
+      .box.box-primary
+        .box-header
+          %h3.box-title="#{@notice.title}"
+        
+        .box-body  
+          %b Imagem
+          %p=image_tag(@notice.image.url(:medium))
+          
+          %b Chamada
+          %p=@notice.summary
+          
+          %b Texto  
+          %p=@notice.full_text
+            
+
+
+  = link_to "Edit", edit_admin_notice_path(@notice), :class => "btn btn-default"
+  = link_to "View All", admin_notices_path, :class => "btn btn-default"
+
+

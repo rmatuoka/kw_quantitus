@@ -1,0 +1,30 @@
+%section.content-header
+  %h1
+    Notícias
+    %small Control panel
+  %ol.breadcrumb
+    %li
+      %a{:href => "admin_root_path"}
+        %i.fa.fa-dashboard
+        Home
+    %li.active Notícias
+
+
+/ Main content
+%section.content
+  .row
+    / left column
+    .col-md-12
+      / general form elements
+      .box.box-primary
+        .box-header
+          %h3.box-title Editar Notícia
+        / /.box-header
+        / form start
+        = render 'form'
+      
+
+      %p
+        = link_to "Back to List", admin_notices_path, :class => "btn btn-default"
+
+

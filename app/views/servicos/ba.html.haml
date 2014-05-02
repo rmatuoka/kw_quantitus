@@ -1,0 +1,44 @@
+-content_for :stylesheets do
+  =stylesheet_link_tag "internal.css"
+  =stylesheet_link_tag "servicos.css"
+
+-content_for :highlight do
+  .row.highlight
+    .col-md-12.image
+      =image_tag("destaques/company.jpg")
+
+  .row.highlight-item
+    .col-md-8.col-md-offset-2
+      %h1 Melhore a tomada de decisões por meio de modelos estatísticos de alto desempenho
+
+%section.main-content
+  .container.breadcrumb-custom
+    .row
+      .col-md-12
+        = link_to "quantittus / ", "#"
+        = link_to "serviços", "#", :class => "active"
+    
+    .row
+      .col-md-12
+        %h1 Sobre a QuantiTTus
+        
+    .row.servicos
+      .col-md-3
+        .col-md-10.menu
+          =link_to "Business Analytics", ba_servicos_path, :class => "active"
+          =link_to "Business Optimization", bo_servicos_path
+          =link_to "Business Intelligence", bi_servicos_path
+          =link_to "Lean Six Signa", lss_servicos_path
+          
+      .col-md-8
+        %h2 Business Analytics
+        %span Modelos estatísticos para negócios
+        
+        %p 
+          Com a experiência e competência de nossa equipe, especializada em métodos quantitativos aplicados a negócios, desenvolvemos modelos estatísticos que produzem, de forma objetiva e incisiva, insights baseados em dados históricos de desempenho da empresa (faturamento, volume de vendas, sazonalidade, portfólio, e outros), traduzidos em padrões de interpretação lógica que permitem a projeção de cenários, através de métodos matemáticos preditivos que apresentam causas de problemas e tendências que têm por finalidade proporcionar um ambiente de gestão no qual as incertezas sejam mitigadas e decisões seguras, baseadas em fatos concretos, sejam potencializadas, permitindo a otimização orientada de processos,  produtos e serviços.
+          <br /><br />
+          Entre em contato e agende uma reunião para conhecer mais sobre nossas soluções em business analytics.
+        
+        %p
+          =image_tag("servicos/ba.jpg")
+        

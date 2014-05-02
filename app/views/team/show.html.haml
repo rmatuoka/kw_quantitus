@@ -1,0 +1,61 @@
+-content_for :stylesheets do
+  =stylesheet_link_tag "internal.css"
+  =stylesheet_link_tag "team.css"
+
+-content_for :highlight do
+  .row.highlight
+    .col-md-12.image
+      =image_tag("destaques/team.jpg")
+
+  .row.highlight-item
+    .col-md-8.col-md-offset-2
+      %h1 Conheça quem transforma oportunidades em resultados
+
+%section.profile
+  .container.breadcrumb-custom
+    .row
+      .col-md-12
+        = link_to "quantittus / ", "#"
+        = link_to "equipe /", "#"
+        = link_to "#{@team.name}", "#", :class => "active"
+    
+    .row
+      .col-md-10.col-md-offset-1.text-center
+        %h1
+          %b=@team.name
+          %br
+          ="#{@team.position}, #{@team.company}"
+          
+      .col-md-10.col-md-offset-1.text-center.margin-top-30
+        =image_tag(@team.image.url(:big))
+    
+      -if !@team.quote.blank?
+        .col-md-10.col-md-offset-1.text-center.margin-top-30
+          %blockquote
+            =@team.quote
+
+%section.formation
+  .container
+    .row
+      .col-md-10.col-md-offset-1
+        %p.text-center
+          =image_tag("team/ico-sobre.jpg")
+          %p.text-center
+            =raw(@team.professional)
+%section.main-content
+  .container      
+    .row
+      .col-md-12
+        %h1 Equipe
+      
+    .row.team
+      - @teams.each do |m|
+        .col-md-4
+          %h3.text-center 
+            %b=m.name
+            %br
+            ="#{m.position}, #{m.company}"
+      
+          %p.text-center
+            =link_to(image_tag(m.image.url(:medium)), team_path(m))
+      

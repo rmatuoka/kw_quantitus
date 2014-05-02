@@ -1,0 +1,40 @@
+%section.content-header
+  %h1
+    Eventos  
+    %small Control panel
+  %ol.breadcrumb
+    %li
+      %a{:href => "admin_root_path"}
+        %i.fa.fa-dashboard
+        Home
+    %li.active Eventos
+
+
+/ Main content
+%section.content
+  .col-xs-12
+    %p= link_to "+ Evento", new_admin_event_path, :class => "btn btn-primary"
+    
+    .box.a
+      .box-header
+        %h3.box-title Eventos
+
+      .box-body.table-responsive.no-padding
+        %table.table.table-hover
+          %tr
+            %th Start date
+            %th Name
+            %th Link
+          - for event in @events
+            %tr
+              %td= event.start_date
+              %td= event.name
+              %td= event.link
+              %td
+                = link_to 'Show', [:admin, event], :class => "btn btn-default"
+                = link_to 'Edit', edit_admin_event_path(event), :class => "btn btn-default"
+                = link_to 'Destroy', [:admin, event], :confirm => 'Are you sure?', :method => :delete, :class => "btn btn-default"
+              
+        
+    %p= link_to "+ Notícia", new_admin_event_path, :class => "btn btn-primary"
+

@@ -1,0 +1,39 @@
+%section.content-header
+  %h1
+    Contatos
+    %small Control panel
+  %ol.breadcrumb
+    %li
+      %a{:href => "admin_root_path"}
+        %i.fa.fa-dashboard
+        Home
+    %li.active Contatos
+
+
+/ Main content
+%section.content
+  .col-xs-12
+  
+    .box.a
+      .box-header
+        %h3.box-title Equipe
+
+      .box-body.table-responsive.no-padding
+      
+        %table.table.table-hover
+          %tr
+            %th Name
+            %th Email
+            %th Phone
+            %th Ações
+          - for sitecontact in @sitecontacts
+            %tr
+              %td= sitecontact.name
+              %td= sitecontact.email
+              %td= sitecontact.phone
+              %td
+                = link_to 'Show', [:admin, sitecontact], :class => "btn btn-default"
+                = link_to 'Edit', edit_admin_sitecontact_path(sitecontact), :class => "btn btn-default"
+                = link_to 'Destroy', [:admin, sitecontact], :confirm => 'Are you sure?', :method => :delete, :class => "btn btn-default"
+      
+

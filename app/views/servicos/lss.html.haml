@@ -1,0 +1,45 @@
+-content_for :stylesheets do
+  =stylesheet_link_tag "internal.css"
+  =stylesheet_link_tag "servicos.css"
+
+-content_for :highlight do
+  .row.highlight
+    .col-md-12.image
+      =image_tag("destaques/company.jpg")
+
+  .row.highlight-item
+    .col-md-8.col-md-offset-2
+      %h1 Melhore a gestão dos recursos da sua empresa em processos operacionais, táticos e estratégicos e amplie seus resultados
+
+%section.main-content
+  .container.breadcrumb-custom
+    .row
+      .col-md-12
+        = link_to "quantittus / ", "#"
+        = link_to "serviços", "#", :class => "active"
+    
+    .row
+      .col-md-12
+        %h1 Sobre a QuantiTTus
+        
+    .row.servicos
+      .col-md-3
+        .col-md-10.menu
+          =link_to "Business Analytics", ba_servicos_path
+          =link_to "Business Optimization", bo_servicos_path
+          =link_to "Business Intelligence", bi_servicos_path
+          =link_to "Lean Six Signa", lss_servicos_path, :class => "active"
+          
+      .col-md-8
+        %h2 Lean Six Sigma
+        %span Análise e melhoria de processos 
+        
+        
+        %p 
+          Analisar processos, diagnosticar problemas e entregar soluções eficazes e eficientes são desafios para muitas empresas. Com as práticas de análise e gestão do método especializado Lean Six Sigma, é possível melhorar processos de maneira objetiva, entregando resultados otimizados pela ação direta na identificação de defeitos, níveis de superprodução, demora na realização de  atividades, talentos não utilizados, falhas de transporte, inventário e mecanismo e procedimentos desnecessários.
+          <br /><br />
+          Entre em contato e agende uma reunião para conhecer mais sobre nossas soluções em Lean Six Sigma.
+          
+        
+        %p
+          =image_tag("servicos/lss.jpg")

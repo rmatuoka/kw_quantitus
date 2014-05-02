@@ -1,0 +1,21 @@
+= form_for [:admin, @event] do |f|
+  -if f.error_messages
+    .alert.alert-danger.alert-dismissable
+      %i.fa.fa-ban
+      %button.close{"aria-hidden" => "true", "data-dismiss" => "alert", :type => "button"} &times;
+      %b Alert!
+      Confira os campos marcados em vermelho.
+  .box-body
+    .form-group
+      = f.label :start_date, "Data do Evento"
+      = f.datetime_select :start_date, :class=> "form-control"
+    .form-group
+      = f.label :name, "Nome do Evento"
+      = f.text_field :name, :class=> "form-control"
+    .form-group
+      = f.label :link, "Link de mais informações"
+      = f.text_field :link, :class=> "form-control"
+    .form-group
+
+  .box-footer
+    =f.submit "Salvar", :class => "btn btn-primary"

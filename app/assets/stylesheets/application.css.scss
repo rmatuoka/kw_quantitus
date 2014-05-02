@@ -1,0 +1,278 @@
+
+div
+{
+  
+}
+
+header{
+  margin:46px 0px -4px 0px;
+  
+  .menu{
+    text-align:right;
+    position:relative;
+    z-index:2000;
+  }
+  
+  .logo
+  {
+    position:relative;
+    z-index:2000;
+  }
+  
+  ul{
+    li{
+      display:inline-block;
+      margin-top:11px;
+      margin-left:20px;
+      
+      a{
+        font-family: "Open Sans", sans-serif;
+        font-weight:600;
+        color:#fff;
+        font-size:14px;
+      }
+      
+      a:hover{
+        text-decoration:none;
+      }
+    }
+  }
+  
+  .slide{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    height: 438px;
+    width: 100%;
+  }
+  
+  .slide-container{
+    width: 100%;
+  }
+
+  .highlight-item{
+    
+    text-align:center;
+    margin-top:60px;
+
+    
+    h1{
+      font-size:36px;
+      font-weight:300;
+      color:#fff;
+    }
+    
+    p{
+      font-size:14px;
+      color:#fff;
+    }
+    
+    a{
+      background-color:#00bdff;
+      color:#fff;
+      width:200px;
+      height:36px;
+      line-height:36px;
+      display:inline-block;
+      font-size:18px;
+      font-weight:bold;
+      text-transform:uppercase;
+      
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+    }
+    
+    a:hover
+    {
+      text-decoration:none;
+      background-color:#0099ce;
+    }
+  }
+}
+
+section.contact
+{
+  background-color:#000;
+  padding:30px 0px 30px 0px;
+  
+  span
+  {
+    font-size:18px;
+    color:#fff;
+  }
+  
+  p
+  {
+    font-size:14px;
+    color:#fff;
+  }
+  
+  ul
+  {
+    margin:20px 0px 20px 0px;
+    
+    li
+    {
+      margin-left:25px;
+      display:inline;
+    }
+  }
+}
+
+section.powered
+{
+  background-color:#00bdff;
+  padding:30px 0px 30px 0px;
+}
+
+section.aloca
+{
+  background-color:#0099ce;
+  
+  .description{
+    font-size:12px;
+    color:#d5f4ff;
+    margin:45px 0px 0px 0px;
+  }
+  
+  .saiba-mais{
+    margin:45px 0px 0px 0px;
+    background-color:#00bdff;
+    color:#fff;
+    width:115px;
+    height:30px;
+    line-height:30px;
+    display:inline-block;
+    font-size:14px;
+    font-weight:bold;
+    text-transform:uppercase;
+    
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+  }
+  
+  .saiba-mais:hover
+  {
+    text-decoration:none;
+    background-color:#0099ce;
+  }
+
+}
+
+section.news
+{
+  padding:30px 0px 30px 0px;
+  background-color:#00bdff;
+  
+  .agenda
+  {
+    margin:30px 0px 30px 0px;
+    
+    .date
+    {
+      .day
+      {
+        width:100%;
+        display:block;
+        font-size:47px;
+        color:#0099ce;
+      }
+      
+      .month
+      {
+        width:100%;
+        display:block;
+        font-size:24px;
+        color:#0099ce;
+        margin-top:-13px;
+      }
+    }
+    
+    h4
+    {
+      font-size:24px;
+      color:#fff;
+      font-weight:300;
+    }
+    
+    p
+    {
+      font-size:12px;
+      color:#004e69;
+    }
+    
+    a
+    {
+      font-size:12px;
+      color:#004e69;
+    }
+  }
+  
+  .news
+  {
+    h4{
+      font-size:24px;
+      color:#fff;
+      font-weight:300;
+    }
+    
+    span{
+      display:block;
+      font-size:12px;
+      color:#004e69;
+    }
+    
+    p{
+      font-size:12px;
+      color:#fff;
+    }
+    
+    a{
+      font-size:12px;
+      color:#fff;
+    }
+  }
+}
+
+.breadcrumb-custom
+{
+  a{
+    font-size:12px;
+    color:#a5a5a5;
+  }
+  
+  
+  a.active{
+    color:#0099ce;
+  }
+}
+
+.main-content
+{
+  padding:0px 0px 30px 0px;
+  
+  h1
+  {
+    font-weight:300;
+    font-size:30px;
+    color:#00bdff;
+  }
+}
+
+.margin-top-30
+{
+  margin-top:30px;
+}
+
+.margin-top-20
+{
+  margin-top:20px;
+}
+
+.white
+{
+  color:#fff !important;
+}

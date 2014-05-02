@@ -1,0 +1,99 @@
+-content_for :stylesheets do
+  =stylesheet_link_tag "home.css"
+
+-content_for :highlight do
+  .slide
+    .slide-container.a
+      .row.highlight
+        .col-md-12.image
+          =image_tag("destaques/home.jpg")
+
+      .row.highlight-item
+        .col-md-8.col-md-offset-2
+          %h1 Conheça o Aloca
+          %p Solução em gestão e alocação de recursos.
+          =link_to "SAIBA MAIS", produtos_path
+          
+    .slide-container
+      .row.highlight
+        .col-md-12.image
+          =image_tag("destaques/home.jpg")
+
+      .row.highlight-item
+        .col-md-8.col-md-offset-2
+          %h1 Acompanhe a Quantittus no Conalytics
+          %p De 12 a 16 de maio. Clique para saber mais!
+          =link_to "SAIBA MAIS", "http://conalytics.com.br", :target => "_blank"
+            
+    .slide-container
+      .row.highlight
+        .col-md-12.image
+          =image_tag("destaques/home.jpg")
+
+      .row.highlight-item
+        .col-md-8.col-md-offset-2
+          %h1 Software sob medida
+          %p Já pensou em ter um software exclusivo e sob medida para a sua empresa?
+          =link_to "SAIBA MAIS", produtos_path
+
+%section.services
+  .container
+    .row
+      .col-md-3
+        %h2.text-center Business Analytics
+        %p.text-center
+          =image_tag("home/ico-ba.jpg")
+        %p 
+          %a{:href => "/servicos/ba"}Melhore a tomada de decisões por meio de modelos estatísticos de alto desempenho
+      .col-md-3
+        %h2.text-center Business Optimization
+        %p.text-center
+          =image_tag("home/ico-bo.jpg")
+        %p 
+          %a{:href => "/servicos/bo"}Melhore a gestão dos recursos da sua empresa em processos operacionais, táticos e estratégicos e amplie seus resultados.
+      .col-md-3
+        %h2.text-center Business Intelligence
+        %p.text-center
+          =image_tag("home/ico-bi.jpg")
+        %p 
+          %a{:href => "/servicos/bi"}Avalie e acompanhe a performance da sua empresa por meio de índices estatísticos objetivos.
+      .col-md-3
+        %h2.text-center Lean Six-Sigma
+        %p.text-center
+          =image_tag("home/ico-lean-six.jpg")
+        %p 
+          %a{:href => "/servicos/lss"}Elimine desperdícios e melhore a performance de processos de produção e de prestação de serviços.
+
+%section.testimonials
+  .container
+    .row
+      .col-md-4
+        %h3.text-center 
+          %b Hugo Pina 
+          %br
+          CEO, Alexandre & Pina Advogados Associados 
+        
+        %p.text-center
+          =image_tag("home/ico-hpina.jpg")
+    
+        %p "A QuantiTTus nos ajuda a identificar oportunidades importantes de melhoria para nossos serviços, bem como sempre apresenta soluções tecnológicas relevantes para nossas necessidades. Recomendamos fortemente."
+      .col-md-4
+        %h3.text-center 
+          %b Wanderley Antonio
+          %br
+          Diretor Comercial, Frilan Distribuidora de Alimentos 
+      
+        %p.text-center
+          =image_tag("home/ico-wanderley.jpg")
+  
+        %p "A QuantiTTus vem trabalhando com competência na modernização de tecnologia e gestão da empresa. Seus profissionais demonstram real comprometimento em gerar resultados para nosso negócio."
+      .col-md-4
+        %h3.text-center 
+          %b Johnny Deep
+          %br
+          CEO, Apple
+        
+        %p.text-center
+          =image_tag("home/ico-depoimento3.jpg")
+    
+        %p "Lorem dolor sit amet, consectetur adipiscing elit. Donec rutrum pulvinar ligula nec pretium. Mauris sagittis pellentesque magna at ornare."

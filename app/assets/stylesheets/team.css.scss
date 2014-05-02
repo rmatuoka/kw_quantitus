@@ -1,0 +1,82 @@
+// Place all the styles related to the team controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.team
+{
+  h3
+  {
+    color:#0099ce;
+    font-size:14px;
+  }
+  
+  img
+  {
+    -webkit-border-radius: 115px;
+    -moz-border-radius: 115px;
+    border-radius: 115px;
+  }
+}
+
+.profile
+{
+  h1
+  {
+    font-size:30px;
+    color:#0099ce;
+  }
+  
+  img
+  {
+    -webkit-border-radius: 250px;
+    -moz-border-radius: 250px;
+    border-radius: 250px;
+  }
+  
+  blockquote {
+    font-size: 20px;
+    font-style: italic;
+    margin: 0.25em 0;
+    padding: 0.25em 40px;
+    line-height: 1.45;
+    position: relative;
+    color: #a5a5a5;
+    border:none;
+  }
+  
+  blockquote:before {
+    display: block;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    color: #00ade9;
+  }
+  
+  blockquote cite {
+    color: #00ade9;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+  }
+
+  blockquote cite:before {
+  content: "\2014 \2009";
+  }
+}
+
+section.formation
+{
+  background-color:#00ade9;
+  margin:0px;
+  padding:30px 0px 30px 0px;
+  
+  p
+  {
+    font-size:14px;
+    font-weight:300;
+    color:#fff;
+  }
+}

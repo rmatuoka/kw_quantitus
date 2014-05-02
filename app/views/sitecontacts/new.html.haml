@@ -1,0 +1,54 @@
+-content_for :stylesheets do
+  =stylesheet_link_tag "internal.css"
+  =stylesheet_link_tag "sitecontacts.css"
+
+-content_for :highlight do
+  .row.highlight
+    .col-md-12.image
+      =image_tag("destaques/contato.jpg")
+
+  .row.highlight-item
+    .col-md-8.col-md-offset-2
+      %h1 Quer saber mais sobre nossas soluções? Entre em contato com a gente
+
+%section.main-content
+  .container.breadcrumb-custom
+    .row
+      .col-md-12
+        = link_to "quantittus / ", "#"
+        = link_to "contato", "#", :class => "active"
+    
+    .row
+      .col-md-12
+        %h1 Entre em contato
+    
+    = form_for ([@sitecontact], :html => { :multipart => :true}) do |f|    
+      .row.formulario
+        .col-md-6
+          -if f.error_messages
+            .alert.alert-danger.margin-top-30
+              %i.fa.fa-ban
+              %button.close{"aria-hidden" => "true", "data-dismiss" => "alert", :type => "button"} &times;
+              %b Alert!
+              Confira os campos marcados em vermelho.
+          %label Nome
+          =f.text_field :name, :class => "form-control"
+          
+          %label.margin-top-20 E-mail
+          =f.text_field :email, :class => "form-control"
+        
+          %label.margin-top-20 Telefone
+          =f.text_field :phone, :class => "form-control"
+        
+          %label.margin-top-20 Mensagem
+          =f.text_area :message, :class => "form-control", :style => "height:200px;"
+        
+          %input.btn.btn-primary.pull-right.margin-top-20{:type => "submit"}
+        .col-md-6
+          %p
+            =image_tag("contato/mapa.jpg")
+          %p.margin-top-20
+            comercial@quantittus.com.br <br />
+            Rua Dona Brígida, 240 – Vila Mariana – SP <br />
+            11 9-7200-4633/ 11 9-8244-3693
+        

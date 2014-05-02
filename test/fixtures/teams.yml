@@ -1,0 +1,15 @@
+one:
+  name: MyString
+  company: MyString
+  position: MyString
+  quote: MyString
+  professional: MyText
+  academic: MyText
+
+two:
+  name: MyString
+  company: MyString
+  position: MyString
+  quote: MyString
+  professional: MyText
+  academic: MyText

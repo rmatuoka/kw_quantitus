@@ -1,0 +1,28 @@
+= form_for ([:admin, @team], :html => { :multipart => :true}) do |f|
+  -if f.error_messages
+    .alert.alert-danger.alert-dismissable
+      %i.fa.fa-ban
+      %button.close{"aria-hidden" => "true", "data-dismiss" => "alert", :type => "button"} &times;
+      %b Alert!
+      Confira os campos marcados em vermelho.
+  .box-body
+    .form-group
+      = f.label :name, "Nome Completo"
+      = f.text_field :name, :class => "form-control"
+    .form-group
+      = f.label :image, "Foto"
+      = f.file_field :image, :class => "form-control"
+    .form-group
+      = f.label :company, "Empresa"
+      = f.text_field :company, :class => "form-control"
+    .form-group
+      = f.label :position, "Cargo"
+      = f.text_field :position, :class => "form-control"
+    .form-group
+      = f.label :quote, "Citação"
+      = f.text_field :quote, :class => "form-control"
+    .form-group
+      = f.label :professional, "Sobre"
+      = f.text_area :professional, :class => "form-control tinymce"
+  .box-footer
+    =f.submit "Salvar", :class => "btn btn-primary"

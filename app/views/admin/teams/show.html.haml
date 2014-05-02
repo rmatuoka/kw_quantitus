@@ -1,0 +1,45 @@
+%section.content-header
+  %h1
+    Equipe  
+    %small Control panel
+  %ol.breadcrumb
+    %li
+      %a{:href => "admin_root_path"}
+        %i.fa.fa-dashboard
+        Home
+    %li.active Equipe
+     
+
+/ Main content
+%section.content
+  .row
+    / left column
+    .col-md-12
+      / general form elements
+      .box.box-primary
+        .box-header
+          %h3.box-title="#{@team.name}"
+        
+        .box-body  
+          %b Foto
+          %p=image_tag(@team.image.url(:medium))
+          
+          %b Empresa  
+          %p=@team.company
+          
+          %b Cargo  
+          %p=@team.position
+          
+          %b Quote  
+          %p=@team.quote
+          
+          %b Currículo Profissional  
+          %p=raw(@team.professional)
+          
+          %b Formação Acadêmica  
+          %p=raw(@team.academic)
+            
+
+
+  = link_to "Edit", edit_admin_team_path(@team), :class => "btn btn-default"
+  = link_to "View All", admin_teams_path, :class => "btn btn-default"

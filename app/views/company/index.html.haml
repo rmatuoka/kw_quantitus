@@ -1,0 +1,85 @@
+-content_for :stylesheets do
+  =stylesheet_link_tag "internal.css"
+  =stylesheet_link_tag "company.css"
+
+-content_for :highlight do
+  .row.highlight
+    .col-md-12.image
+      =image_tag("destaques/company.jpg")
+
+  .row.highlight-item
+    .col-md-8.col-md-offset-2
+      %h1 Inteligência que gera valor, valor que gera resultados
+
+%section.main-content
+  .container.breadcrumb-custom
+    .row
+      .col-md-12
+        = link_to "quantittus / ", "#"
+        = link_to "empresa", "#", :class => "active"
+    
+    .row
+      .col-md-12
+        %h1 Sobre a QuantiTTus
+        
+    .row.company
+      .col-md-12
+        %h2 
+          =image_tag("empresa/ico-empresa.gif")
+          Quem Somos
+        %p
+          Soluções completas em inteligência aplicada a negócios. Esta é a definição objetiva do que oferecemos. Com experiência desenvolvida e aplicada em grandes empresas, temos uma equipe especializada em compreender, analisar e otimizar empresas por meio de análises e informações sólidas, precisas e que geram insights.
+          
+          Somos uma consultoria especializada em Lean Six Sigma e métodos quantitativos aplicados à gestão nas áreas de produção, finanças e marketing. Nosso expertise também é direcionado ao planejamento e desenvolvimento de softwares corporativos customizados, além de sua manutenção e atualização.
+          
+          Na Quantittus, informações se transformam em soluções e oportunidades para o seu negócio.
+          
+      .col-md-12
+        %h2 
+          =image_tag("empresa/ico-sonho.gif")
+          No que acreditamos
+        %p
+          Um mundo melhor se constrói com instituições eficientes e sustentáveis. Nós temos o que é necessário para ser parte deste processo.
+  
+      
+      .col-md-6
+        %h2 
+          =image_tag("empresa/ico-crenca.gif")
+          Nossa Visão
+        %p
+          Ser a melhor consultoria de resultados da América Latina em 10 anos.
+          
+      .col-md-6
+        %h2 
+          =image_tag("empresa/ico-missao.gif")
+          Nossa Missão
+        %p
+          Auxiliar empresas a: <br />
+          •	Produzirem mais e melhor; <br />
+          •	Serem mais rentáveis e lucrativas; <br />
+          •	Desenvolverem um negócio sustentável. <br />
+          
+      
+      
+      .col-md-12
+        %h2 
+          =image_tag("empresa/ico-valores.gif")
+          Nossos Valores
+        
+        .col-md-4
+          %h3 pessoas
+          %ul
+            %li Somos um time de empreendedores
+            %li Liderança pelo exemplo
+            %li Aprender e ensinar
+            %li Contratar pessoas melhores do que nós
+        .col-md-4
+          %h3 cultura
+          %ul
+            %li Transparência
+            %li Cada cliente é único
+            %li Soluções sob medida
+        .col-md-4
+          %h3 foco
+          %ul
+            %li Foco no resultado do cliente

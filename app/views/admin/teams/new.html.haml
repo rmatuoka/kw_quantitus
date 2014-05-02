@@ -1,0 +1,28 @@
+%section.content-header
+  %h1
+    Equipe
+    %small Control panel
+  %ol.breadcrumb
+    %li
+      %a{:href => "admin_root_path"}
+        %i.fa.fa-dashboard
+        Home
+    %li.active Equipe
+
+
+/ Main content
+%section.content
+  .row
+    / left column
+    .col-md-12
+      / general form elements
+      .box.box-primary
+        .box-header
+          %h3.box-title Novo Membro
+        / /.box-header
+        / form start
+        = render 'form'
+      
+
+      %p
+        = link_to "Back to List", admin_teams_path, :class => "btn btn-default"

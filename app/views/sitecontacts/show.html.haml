@@ -1,0 +1,33 @@
+-content_for :stylesheets do
+  =stylesheet_link_tag "internal.css"
+  =stylesheet_link_tag "sitecontacts.css"
+
+-content_for :highlight do
+  .row.highlight
+    .col-md-12.image
+      =image_tag("destaques/contato.jpg")
+
+  .row.highlight-item
+    .col-md-8.col-md-offset-2
+      %h1 Quer saber mais sobre nossas soluções? Entre em contato com a gente
+
+%section.main-content
+  .container.breadcrumb-custom
+    .row
+      .col-md-12
+        = link_to "quantittus / ", "#"
+        = link_to "contato /", "#"
+        = link_to "mensagem enviada", "#", :class => "active"
+        
+    
+    .row
+      .col-md-12
+        %h1 Mensagem enviada com sucesso!
+        
+    .row.formulario
+      .col-md-6
+        %p Sua mensagem foi enviada com sucesso! <br /> Em breve nossa equipe entrará em contato.
+        
+        
+        =link_to "Voltar", "/", :class => "btn btn-primary margin-top-20 white"
+      

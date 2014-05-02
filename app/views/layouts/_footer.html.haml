@@ -1,0 +1,49 @@
+%section.aloca
+  .container
+    .row
+      .col-md-3
+        %p.text-center
+          =image_tag("home/logo-aloca.jpg")
+      .col-md-6
+        %p.description Tenha os recursos da sua empresa alocados de forma otimizada, gerencie seus resultados e melhore sua performance
+      .col-md-3.text-center
+        =link_to "Saiba Mais", produtos_path, :class => "saiba-mais"
+
+%section.news
+  .container
+    .row
+      .col-md-3.agenda
+        .col-md-4.date
+          %span.day.text-center=@event.start_date.strftime("%d")
+          %span.month.text-center=@event.start_date.strftime("%b")
+        .col-md-8
+          %h4 agenda
+          %p=link_to(@event.name, @event.link, :target => "_blank")
+          
+      .col-md-9.news
+        %h4 notícias
+        
+        -@notices.each do |n|
+          %span=n.created_at.strftime("%d/%m/%Y")
+          %p=link_to(n.summary, news_path(n))
+
+%footer
+  %section.contact
+    .container
+      .row
+        .col-md-6
+          %span comercial@quantittus.com.br
+          %p
+            Rua Dona Brígida, 240 – Vila Mariana – SP <br />
+            11 9-7200-4633 / 11 9-8244-3693 
+        .col-md-6.text-right
+          %ul
+            %li=link_to(image_tag("template/ico-fb.gif"), "http://www.facebook.com/Quantittus", :target => "_blank")
+            %li=link_to(image_tag("template/ico-in.gif"),"http://www.linkedin.com/company/quantittus?trk=hb_tab_compy_id_2980400", :target => "_blank")
+            %li=link_to(image_tag("template/ico-gp.gif"),"https://plus.google.com/b/102987224892559663559/102987224892559663559/about?hl=pt-BR", :target => "_blank")
+            
+  %section.powered
+    .container
+      .row
+        .col-md-12.text-center
+          =link_to(image_tag("template/sato7.gif"), "http://www.sato7.com.br", :target => "_blank")
