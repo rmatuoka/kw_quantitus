@@ -14,8 +14,8 @@
     .row
       .col-md-3.agenda
         .col-md-4.date
-          %span.day.text-center=@event.start_date.strftime("%d")
-          %span.month.text-center=@event.start_date.strftime("%b")
+          -#%span.day.text-center=@event.start_date.strftime("%d")
+          %span.month.text-center=@event.data
         .col-md-8
           %h4 agenda
           %p=link_to(@event.name, @event.link, :target => "_blank")

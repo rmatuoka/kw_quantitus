@@ -5,7 +5,7 @@ class Notifier < ActionMailer::Base
   def send_contact_adm(sitecontact)
     @sitecontact = sitecontact
     
-    mail(:to => "sac@quantittus.com.br", :bcc => "log@korewa.com.br", :subject => "Novo contato pelo site - Protocolo #{@sitecontact.id}") 
+    mail(:to => "contato@quantittus.com.br", :bcc => "log@korewa.com.br", :subject => "Novo contato pelo site - Protocolo #{@sitecontact.id}") 
   end
   
 end

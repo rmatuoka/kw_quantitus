@@ -23,6 +23,9 @@
       = f.text_field :quote, :class => "form-control"
     .form-group
       = f.label :professional, "Sobre"
-      = f.text_area :professional, :class => "form-control tinymce"
+      = f.text_area :professional, :class => "form-control tinymce"      
+    .form-group
+      = f.label :academic, "LinkedIn"
+      = f.text_field :academic, :class => "form-control"
   .box-footer
     =f.submit "Salvar", :class => "btn btn-primary"
