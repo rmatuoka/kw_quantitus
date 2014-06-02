@@ -7,6 +7,7 @@ class ApplicationController < ActionController::Base
   
   def load_event_notices
     @event = Event.first(:order => "start_date ASC")
+    @events = Event.all(:order => "`order` ASC")
     
     @notices = Notice.all(:order => "id DESC", :limit => 2)
   end

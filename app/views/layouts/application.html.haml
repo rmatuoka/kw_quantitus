@@ -22,9 +22,9 @@
     %header
       .container
         .row
-          .col-md-4.logo
+          .col-md-3.logo
             =link_to(image_tag("template/logo.png"), root_path)
-          .col-md-8.menu
+          .col-md-9.menu
             %ul
               %li=link_to "A QuantiTTus", company_index_path
               %li=link_to "Equipe", team_index_path
@@ -57,7 +57,13 @@
         
         $('.slide').cycle({
         		fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
-        	});
+        });
+        
+        $('.agenda').cycle({
+        		fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+        });
+        	
+        	
       });
       
       //RESIZES

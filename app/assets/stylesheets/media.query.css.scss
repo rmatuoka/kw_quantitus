@@ -2,6 +2,46 @@
 	
 }
 
+@media only screen and (max-width: 480px) {
+	.menu ul
+	{
+	  text-align:center;
+	  margin-left:-67px;
+	  margin-top:20px;
+  }
+	
+	header {
+  height: 188px;
+  }
+  
+  header ul li {
+    display: inline-block;
+  }
+  
+	header .slide {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    height: 230px;
+    width: 100%;
+  }
+	
+	header .highlight {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1000;
+    height: 230px;
+    width: 100%;
+  }
+  
+	.highlight-item
+	{
+	  display:none;
+  }
+}
+
 @media only screen and (max-width: 320px) {
 	
 	.highlight-item{
