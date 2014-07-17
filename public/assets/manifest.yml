@@ -47,9 +47,10 @@ tinymce/plugins/searchreplace/searchreplace.htm: tinymce/plugins/searchreplace/s
 plugins/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor/index.png: plugins/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor-245679df422763483b659aaba5703627.png
 admin_img/user-bg/index.png: admin_img/user-bg-a44845dfbb3100ba53a9e2c1b42bf008.png
 admin_img/user-bg.png: admin_img/user-bg-a44845dfbb3100ba53a9e2c1b42bf008.png
+template/logoOld/index.png: template/logoOld-95c2a77dd573a6df20c5f6791efc6ca7.png
+tinymce/themes/advanced/img/trans.gif: tinymce/themes/advanced/img/trans-da2c85df5b7b453ebaea0b44da0ee521.gif
 tinymce/plugins/xhtmlxtras/acronym/index.htm: tinymce/plugins/xhtmlxtras/acronym-da1c7fec7b98de623b658542b09174fa.htm
 produtos/ico-solucoes.jpg: produtos/ico-solucoes-f6acd99176e83f991fcafa75ca6b8264.jpg
-tinymce/themes/advanced/img/trans.gif: tinymce/themes/advanced/img/trans-da2c85df5b7b453ebaea0b44da0ee521.gif
 tinymce/plugins/media/moxieplayer/index.swf: tinymce/plugins/media/moxieplayer-aefe818c4fd2f7c12fe58ec7744d759d.swf
 tinymce/plugins/example/dialog/index.htm: tinymce/plugins/example/dialog-0e359389ab35f0a49d4fa83ebdcd33dd.htm
 tinymce/themes/simple/img/icons.gif: tinymce/themes/simple/img/icons-0a4645a5a71e0da61978dbf7dce1708b.gif
@@ -120,7 +121,7 @@ fonts/fontawesome-webfont/index.svg: fonts/fontawesome-webfont-f1c2889911d212e14
 home/highlight/index.jpg: home/highlight-5467ca31b2edfeccbaa18a17de4cac1b.jpg
 plugins/input-mask/phone-codes/phone-be/index.json: plugins/input-mask/phone-codes/phone-be-419c411ca78c9489adcaeba9f8ab92df.json
 tinymce/plugins/xhtmlxtras/acronym.htm: tinymce/plugins/xhtmlxtras/acronym-da1c7fec7b98de623b658542b09174fa.htm
-template/logo/index.png: template/logo-95c2a77dd573a6df20c5f6791efc6ca7.png
+template/logo/index.png: template/logo-401d804e725c5d9d359e6e9731a97d71.png
 tinymce/themes/advanced/img/shockwave/index.gif: tinymce/themes/advanced/img/shockwave-24abe0b0b16fc69afcfbf8ee9ea62607.gif
 plugins/ckeditor/plugins/link/images/hidpi/anchor/index.png: plugins/ckeditor/plugins/link/images/hidpi/anchor-bb9487d4266a470d2416720cfe4cdf97.png
 home/ico-bo.jpg: home/ico-bo-78f6e7f154550389653585d47c01cb5f.jpg
@@ -187,7 +188,7 @@ tinymce/plugins/fullpage/fullpage.htm: tinymce/plugins/fullpage/fullpage-b241582
 tinymce/plugins/emotions/img/smiley-innocent.gif: tinymce/plugins/emotions/img/smiley-innocent-c15ce5f2edaa4d864128cb8ff742ca2a.gif
 tinymce/plugins/emotions/img/smiley-innocent/index.gif: tinymce/plugins/emotions/img/smiley-innocent-c15ce5f2edaa4d864128cb8ff742ca2a.gif
 plugins/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus/index.txt: plugins/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus-22696c1f0d5f975dff6a4ee99c90a3f9.txt
-template/logo.png: template/logo-95c2a77dd573a6df20c5f6791efc6ca7.png
+template/logo.png: template/logo-401d804e725c5d9d359e6e9731a97d71.png
 plugins/ckeditor/plugins/scayt/README.md: plugins/ckeditor/plugins/scayt/README-ce6c019040fcb86b1b3174da2bb89e8e.md
 tinymce/themes/advanced/img/quicktime/index.gif: tinymce/themes/advanced/img/quicktime-dec13e3f67eba02e8ecd58a020e7c9fe.gif
 plugins/ckeditor/plugins/link/images/anchor.png: plugins/ckeditor/plugins/link/images/anchor-0b54a84ddf33bc8724ae8cbd6735d73c.png
@@ -249,10 +250,10 @@ contato/mapa/index.jpg: contato/mapa-15ffa071e31a042860cd57f8385ae78c.jpg
 tinymce/plugins/emotions/emotions/index.htm: tinymce/plugins/emotions/emotions-bb46c0bf8c76f375ed23027a5e5e1ba7.htm
 tinymce/themes/advanced/img/video.gif: tinymce/themes/advanced/img/video-c95d16aac7cd439bc0cc976ae1703482.gif
 tinymce/themes/advanced/img/windowsmedia.gif: tinymce/themes/advanced/img/windowsmedia-eb9919616c6181ac7edbbf695e6eab4d.gif
+tinymce/themes/advanced/img/trans/index.gif: tinymce/themes/advanced/img/trans-da2c85df5b7b453ebaea0b44da0ee521.gif
 produtos/ico-solucoes/index.jpg: produtos/ico-solucoes-f6acd99176e83f991fcafa75ca6b8264.jpg
 tinymce/plugins/xhtmlxtras/cite/index.htm: tinymce/plugins/xhtmlxtras/cite-d8f5a36872467c619744a1910e63ec20.htm
 empresa/ico-empresa.gif: empresa/ico-empresa-5816596d354fb8a18facd99fe7098000.gif
-tinymce/themes/advanced/img/trans/index.gif: tinymce/themes/advanced/img/trans-da2c85df5b7b453ebaea0b44da0ee521.gif
 admin_img/sprite-skin-nice/index.png: admin_img/sprite-skin-nice-be40a535132304a140c3b53cccac227f.png
 destaques/consultoria.jpg: destaques/consultoria-4352cb7bacaab2b62089c371e550e2a8.jpg
 tinymce/plugins/emotions/img/smiley-surprised/index.gif: tinymce/plugins/emotions/img/smiley-surprised-63a8cd3bc7db5436e69f2a851978427c.gif
@@ -396,6 +397,7 @@ admin_img/user2.jpg: admin_img/user2-b6f207756274bccb8bc7ca9bf1c2f3e4.jpg
 admin_img/avatar3.png: admin_img/avatar3-22a8f6505d9468101fa9b6a77aef734b.png
 plugins/ckeditor/skins/moono/images/refresh.png: plugins/ckeditor/skins/moono/images/refresh-7694a7c7fef41b5adfc045b54e056a10.png
 plugins/ckeditor/plugins/wsc/README.md: plugins/ckeditor/plugins/wsc/README-e9b80e4c459a0cda27fc22f208cd5889.md
+template/logoOld.png: template/logoOld-95c2a77dd573a6df20c5f6791efc6ca7.png
 tinymce/themes/advanced/shortcuts.htm: tinymce/themes/advanced/shortcuts-11a418e1d54afce1a682b9329758b149.htm
 tinymce/plugins/paste/pasteword/index.htm: tinymce/plugins/paste/pasteword-59d532f680d055468b4cdeec03dba117.htm
 tinymce/themes/advanced/charmap.htm: tinymce/themes/advanced/charmap-02cd624ee9abfa2645835a5dbf5ee362.htm
