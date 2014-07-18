@@ -24,7 +24,7 @@
         
     .row.news
       -@news.each do |n|
-        .col-md-4
+        .col-md-4.show_new
           %h2=n.title
           =image_tag(n.image.url(:medium))
           =link_to "#{n.summary}", news_path(n)
