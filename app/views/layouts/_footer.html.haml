@@ -28,7 +28,7 @@
         
         -@notices.each do |n|
           %span=n.created_at.strftime("%d/%m/%Y")
-          %p=link_to(n.summary, news_path(n))
+          %p=link_to(n.title, news_path(n))
 
 %footer
   %section.contact
